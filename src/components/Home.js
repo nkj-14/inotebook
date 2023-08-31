@@ -1,7 +1,10 @@
-import React from 'react'
+import Notes from "./Notes";
 
-export const Home = () => {
+export const Home = (props) => {
+  const {showalert} = props
   return (
-    <div>This is Home</div>
-  )
-}
+    <div>
+      <Notes showalert={showalert}/>
+    </div>
+  );
+};
